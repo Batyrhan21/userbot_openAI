@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+
+  bot:
+    build: .
+    command: sh -c "python src/main.py"
+    env_file:
+      - ./src/.env
+    restart: always
+
+
+volumes:
+  pgdata:
