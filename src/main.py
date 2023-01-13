@@ -7,7 +7,7 @@ from service import OpenAIService
 api_id = config('API_ID')
 api_hash = config('API_HASH')
 
-app = Client('my_account')
+app = Client('my_account', api_id=api_id, api_hash=api_hash)
 
 ADMIN=927747990
 
